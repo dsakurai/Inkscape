@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+set -e
+
+# We add this in the user config because it's not straight-forward to restart a nix-daemon in a cotainer (it doesn't have systemd).
+mkdir -p ~/.config/nix
+echo "experimental-features = nix-command flakes" > ~/.config/nix/nix.conf
+
+# Install the "hello" package from our nix flake
+nix profile add ./flake-hello#HelloFlake
+
+# To build a package in the current directory (exeecute from the flake root):
+# nix build .#SomePackageName
+
+# To run a GUI app:
+nix profile add ./flake-hello#Weston
+
+echo "If you use Wayland, you might use this command to pass necessary environment variables: 'nix develop -i --keep DISPLAY --keep WAYLAND_DISPLAY --keep XDG_RUNTIME_DIR'"
+
+echo "Try running '$ weston'."
