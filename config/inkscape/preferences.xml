@@ -390,7 +390,8 @@
        selcue="1"
        gradientdrag="0"
        changelayer="1"
-       changepage="1" />
+       changepage="1"
+       touch_box="1" />
     <eventcontext
        id="connector"
        style="fill:none;fill-rule:evenodd;stroke:black;stroke-opacity:1;stroke-linejoin:miter;stroke-width:1px;stroke-linecap:butt;"
@@ -600,7 +601,8 @@
        state="1" />
     <group
        id="preferences"
-       state="1" />
+       state="1"
+       page="1" />
     <group
        id="gradienteditor" />
     <group
