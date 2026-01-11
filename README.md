@@ -1,6 +1,6 @@
-# Nix GUI Programs Demo
+# Inkscape Demo
 
-This demo shows how to use Nix to build, install, and run GUI programs in a dev container.
+This demo installs Inkscape with some custom configurations for my personal purposes.
 
 ## Prerequisites
 - Nix package manager (pre-installed in this dev container)

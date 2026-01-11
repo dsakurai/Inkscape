@@ -6,5 +6,10 @@ set -e
 mkdir -p ~/.config/nix
 echo "experimental-features = nix-command flakes" > ~/.config/nix/nix.conf
 
+# Copy the config files
+ln -s "${PWD}/config/inkscape"  ~/.config/inkscape 
+
+nix profile add ./flake#Inkscape
+
 echo "If you use Wayland, you might use this command to pass necessary environment variables: 'nix develop -i --keep DISPLAY --keep WAYLAND_DISPLAY --keep XDG_RUNTIME_DIR'"
 
