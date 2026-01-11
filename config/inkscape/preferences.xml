@@ -1102,8 +1102,8 @@
      defaultIconTheme="Adwaita"
      defaultGtkTheme="Adwaita"
      narrowSpinButton="1"
-     preferDarkTheme="1"
-     darkTheme="1"
+     preferDarkTheme="0"
+     darkTheme="0"
      symbolicIcons="1"
      symbolicDefaultBaseColors="0"
      symbolicDefaultHighColors="0"
@@ -1111,7 +1111,7 @@
      iconTheme="multicolor">
     <group
        id="multicolor"
-       symbolicBaseColor="3958107135"
+       symbolicBaseColor="255"
        symbolicSuccessColor="10029823"
        symbolicWarningColor="4279865599"
        symbolicErrorColor="10086143" />
